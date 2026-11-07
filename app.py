@@ -505,7 +505,7 @@ elif selected_page == PAGES[4]:
             ).sort_values(by="Importance", ascending=True)
             fig_imp = px.bar(
                 imp_df, x="Importance", y="Feature", orientation="h",
-                text_auto=".3f", color="Importance", color_continuous_scale="Indigo",
+                text_auto=".3f", color="Importance", color_continuous_scale="Purples",
                 title="Random Forest Predictive Feature Importance"
             )
             fig_imp.update_layout(coloraxis_showscale=False, height=380)
